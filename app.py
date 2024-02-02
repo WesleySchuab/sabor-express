@@ -10,7 +10,14 @@ def exibir_nome_do_programa():
 ╚═════╝░╚═╝░░╚═╝╚═════╝░░╚════╝░╚═╝░░╚═╝  ╚══════╝╚═╝░░╚═╝╚═╝░░░░░╚═╝░░╚═╝╚══════╝╚═════╝░╚═════╝░  
 """)
 
-# Trecho de código suprimido
+
+
+def opcao_invalida():
+    print('Opção Inválida!\n')
+    input('Digite uma tecla para voltar ao menu principal: ')
+    main()
+
+
 
 
 def exibir_opcoes():
@@ -23,15 +30,16 @@ def escolher_opcao():
     opcao_escolhida = int(input('Escolha uma opção: '))
     # opcao_escolhida = int(opcao_escolhida)
     
-    if opcao_escolhida == 1:
+    if opcao_escolhida == 1: 
         print('Cadastrar restaurante')
-    elif opcao_escolhida == 2:
+    elif opcao_escolhida == 2: 
         print('Listar restaurantes')
-    elif opcao_escolhida == 3:
-        print('Ativar restaurantes')
-    else:
+    elif opcao_escolhida == 3: 
+        print('Ativar restaurante')
+    elif opcao_escolhida == 4: 
         finalizar_app()
-
+    else:
+        opcao_invalida()
 
 
 def finalizar_app():
