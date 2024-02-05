@@ -81,7 +81,10 @@ def alternar_estado_restaurante():
     nome_restaurante = input('Digite o nome do restaurante que deseja alterar o estado: ')
     restaurante_encontrado = False
     
-   
+    for restaurante in restaurantes:
+        if nome_restaurante == restaurante['nome']:
+            restaurante_encontrado =True
+            
     
     voltar_ao_menu_principal()
 
