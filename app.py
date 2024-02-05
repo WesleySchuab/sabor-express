@@ -78,7 +78,10 @@ def escolher_opcao():
 
 def alternar_estado_restaurante():
     exibir_subtitulo('Aleternado estado do restaurante')
+    nome_restaurante = input('Digite o nome do restaurante que deseja alterar o estado: ')
+    restaurante_encontrado = False
     
+   
     
     voltar_ao_menu_principal()
 
