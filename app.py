@@ -87,6 +87,7 @@ def alternar_estado_restaurante():
             restaurante['ativo'] = not restaurante['ativo']
             mensagem = f'O restaurante{nome_restaurante} foi ativado com sucesso' if restaurante['ativo'] else f'O 
             restaurante foi desativado com sucesso'
+            print(mensagem)
     
     voltar_ao_menu_principal()
 
