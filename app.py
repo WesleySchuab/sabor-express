@@ -84,6 +84,7 @@ def alternar_estado_restaurante():
     for restaurante in restaurantes:
         if nome_restaurante == restaurante['nome']:
             restaurante_encontrado =True
+            restaurante['ativo'] = not restaurante['ativo']
             
     
     voltar_ao_menu_principal()
