@@ -67,7 +67,7 @@ def escolher_opcao():
         elif opcao_escolhida == 2: 
            listar_restaurantes()
         elif opcao_escolhida == 3: 
-            print('Ativar restaurante')
+            alternar_estado_restaurante()
         elif opcao_escolhida == 4: 
             finalizar_app()
         else:
@@ -76,7 +76,11 @@ def escolher_opcao():
         opcao_invalida()
 
 
-
+def alternar_estado_restaurante():
+    exibir_subtitulo('Aleternado estado do restaurante')
+    
+    
+    voltar_ao_menu_principal()
 
 def finalizar_app():
     #os.system('cls')
