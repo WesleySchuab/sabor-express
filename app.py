@@ -17,19 +17,31 @@ def exibir_nome_do_programa():
 
 
 def voltar_ao_menu_principal():
+    ''' Essa função retorna para o menu principal 
+    '''
     input('Digite uma tecla para voltar ao menu principal')
     main()
 
 def opcao_invalida():
+    ''' Exibe mensagem opção invalida e retorna para o menu principal 
+    '''
     print('Opção Inválida!\n')
     voltar_ao_menu_principal()
     
 def exibir_subtitulo(texto):
+    ''' Essa função exibi uma mensagem recebida por parametro 
+    Input:
+    - Mensagem String
+    
+    -Outputs: *** emaixo e encima mais a mensgem rececbida
+    '''
     os.system('clear') 
     linha = '*' * (len())
     print(texto)
 
 def exibir_opcoes():
+    ''' Exibi as opções do menu
+    '''
     print('1. Cadastrar restaurante')
     print('2. Listar restaurantes')
     print('3. Ativar restaurantes')
@@ -56,6 +68,9 @@ def cadastrar_novo_restaurante():
 
 
 def listar_restaurantes():
+    ''' Exibi os restaurantes cadastrados
+    - Outputs: Restaurantes cadastrados
+    '''
     exibir_subtitulo('Listando restaurantes') 
 
     for restaurante in restaurantes:
