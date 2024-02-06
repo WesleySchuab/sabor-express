@@ -26,6 +26,7 @@ def opcao_invalida():
     
 def exibir_subtitulo(texto):
     os.system('clear') 
+    linha = '*' * (len())
     print(texto)
 
 def exibir_opcoes():
@@ -36,6 +37,15 @@ def exibir_opcoes():
 
 
 def cadastrar_novo_restaurante():
+    ''' Essa função e responsável por cadastrar um novo restaurante
+    Inputs:
+    - Nome do resturante
+    - Categoria
+    
+    Outputs:
+    - Adiciona um novo restaurante a o dicionário de restaurantes
+    
+    '''
     exibir_subtitulo('Cadastro de novos restaurantes')
     nome_do_restaurante = input('Digite o nome do restaurante que deseja cadastrar: ')
     categoria = input(f'Digite o nome da categoria do restaurante {nome_do_restaurante}:')
