@@ -22,7 +22,8 @@ restaurante_praca = Restaurante('Alabama', 'louco')
 # comando dir mostra os metodos atributos e construtor
 
 
-print(vars(restaurante_praca))
+#print(vars(restaurante_praca))
+print(restaurante_praca)
 
 
 
