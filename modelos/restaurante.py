@@ -3,4 +3,7 @@ class Restaurante:
     categoria = ''
     ativo = False
     
+restaurante_praca = Restaurante()
+
+restaurante_pizza = Restaurante()
 
