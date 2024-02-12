@@ -7,9 +7,13 @@ class Restaurante:
     categoria = ''
     ativo = False
     
-restaurante_praca = Restaurante()
+restaurante_praca = Restaurante('Alabama', 'louco')
 
-restaurante_pizza = Restaurante()
+#restaurante_pizza = Restaurante()
 # comando dir mostra os metodos atributos e construtor
-print(dir(restaurante_praca))
+
+
+print(vars(restaurante_praca))
+
+
 
