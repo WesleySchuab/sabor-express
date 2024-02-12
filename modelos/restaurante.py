@@ -11,7 +11,7 @@ class Restaurante:
     Então, em vez de mostrar a representação do endereço de memória, ele mostrará o que decidirmos.
     """
     def __str__(self) -> str:
-        return self.nome
+        return f'{self.nome} | {self.categoria}'
     nome = ''
     categoria = ''
     ativo = False
