@@ -1,8 +1,10 @@
 class Restaurante:
+    restaurantes = []
     def __init__(self, nome, categoria) -> None:
        self.nome = nome
        self.categoria = categoria
        self.ativo = False
+       Restaurante.restaurantes.append(self)
        
     """
     O método __str__ é um método especial que pega o objeto e define que, se precisarmos mostrar esse objeto em formato de texto,
