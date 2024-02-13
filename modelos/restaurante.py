@@ -17,6 +17,9 @@ class Restaurante:
     nome = ''
     categoria = ''
     ativo = False
+    def listar_restaurantes():
+        for restaurante in Restaurante.restaurantes:
+            print(f'{restaurante.nome} | {restaurante.categoria} | {restaurante.ativo}')
     
 restaurante_praca = Restaurante('Alabama', 'louco')
 
@@ -25,7 +28,7 @@ restaurante_praca = Restaurante('Alabama', 'louco')
 
 
 #print(vars(restaurante_praca))
-print(restaurante_praca)
+Restaurante.listar_restaurantes()
 
 
 
