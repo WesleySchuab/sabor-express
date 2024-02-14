@@ -1,3 +1,5 @@
+from modelos.avalicao import Avaliacao
+
 class Restaurante:
     restaurantes = []
 
@@ -5,6 +7,7 @@ class Restaurante:
         self._nome = nome.title()
         self._categoria = categoria.upper()
         self._ativo = False
+        self._avaliacoes = []
         Restaurante.restaurantes.append(self)
     
     def __str__(self):
