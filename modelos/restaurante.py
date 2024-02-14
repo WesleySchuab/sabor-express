@@ -21,7 +21,9 @@ class Restaurante:
         for restaurante in Restaurante.restaurantes:
             print(f'{restaurante.nome} | {restaurante.categoria} | {restaurante.ativo}')
             
-   
+    @property
+    def ativo(self):
+        return '⌧' if self.ativo else '☐'
     
 restaurante_praca = Restaurante('Alabama', 'louco')
 
