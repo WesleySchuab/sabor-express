@@ -1,7 +1,7 @@
 class Restaurante:
     restaurantes = []
     def __init__(self, nome, categoria) -> None:
-       self.nome = nome
+       self._nome = nome.tile()
        self.categoria = categoria
        self._ativo = False
        Restaurante.restaurantes.append(self)
@@ -13,17 +13,19 @@ class Restaurante:
     Então, em vez de mostrar a representação do endereço de memória, ele mostrará o que decidirmos.
     """
     def __str__(self) -> str:
-        return f'{self.nome} | {self.categoria}'
-    nome = ''
+        return f'{self._nome} | {self.categoria}'
+    _nome = ''
     categoria = ''
     ativo = False
     def listar_restaurantes():
+        print(f'{'Nome do restaurante'.ljust(25)} | {'Categoria'.ljust(25)} | {'Status'}')
         for restaurante in Restaurante.restaurantes:
-            print(f'{restaurante.nome} | {restaurante.categoria} | {restaurante.ativo}')
+            print(f'{restaurante.nome.ljust(25)} | {restaurante.categoria.ljust(25)} | {restaurante.ativo}')
+
             
     @property
     def ativo(self):
-        return '⌧' if self.ativo else '☐'
+        return '⌧' if self._ativo else '☐'
     
 restaurante_praca = Restaurante('Alabama', 'louco')
 
